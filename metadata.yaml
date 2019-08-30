@@ -1,0 +1,17 @@
+name: mininet
+summary: The wifi simulator
+maintainer: sheenam <sheenam@itri.org.tw>
+description: |
+  Wifi simulator
+tags:
+  - Telecom, Network
+  - 4G, 5G
+  - SDN Controller
+series:
+  - zesty
+  - xenial
+  - trusty
+subordinate: false
+provides:
+  provides-relation:
+    interface: openflow

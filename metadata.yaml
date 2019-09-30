@@ -12,6 +12,6 @@ series:
   - xenial
   - trusty
 subordinate: false
-provides:
-  provides-relation:
+requires:
+  mininet:
     interface: openflow

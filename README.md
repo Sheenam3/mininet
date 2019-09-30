@@ -8,7 +8,7 @@ This charm allows to instantiate mininet wifi simulation framework
 
 Once bootstrapped, deploy the Mininet charm :
 
-    juju deploy cs:~sheenam/mininet-wifi-1
+    juju deploy cs:~sheenam/mininet-0
 
 Have a look at what's going on:
 

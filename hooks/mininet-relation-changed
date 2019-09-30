@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -eux
+
+flood_address= `relation-get hostname`
+
+if [ -z "$flood_address" ]; then
+  juju-log "No data sent yet"
+  exit 0
+fi
+
+juju-log "Here is the address" $flood_adress
+sudo mn --controller=remote,ip=$flood_adress,port=6653 --topo=single,3 --switch=user
